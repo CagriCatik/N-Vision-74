@@ -1,4 +1,8 @@
+# N-Vision-74 Project - Zensical Documentation Server
+# Modern static site generator with Material Design theme and 3D component previews
+
+# Core documentation framework
 zensical>=0.0.46
-mkdocs-material>=9.6.7
-mkdocs-glightbox>=0.3.2
+
+# Enhanced markdown support (pulled in by zensical, pinned explicitly for reproducibility)
 pymdown-extensions>=10.14.3
