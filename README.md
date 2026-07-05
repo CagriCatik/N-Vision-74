@@ -1,6 +1,8 @@
 <h1 align="center">N-Vision-74</h1>
 
-A 1:10 scale, fabrication-oriented CAD project that translates the Hyundai N Vision 74 concept car into a 3D-printable model.
+
+<h3 align="center">A 1:10 scale, fabrication-oriented CAD project that translates the Hyundai N Vision 74 concept car into a 3D-printable model.</h3>
+
 
 <p align="center">
   <img src="assets/Hyundai_N_Vision_74_Concept.webp" alt="Hyundai N Vision 74 Concept" width="70%">
