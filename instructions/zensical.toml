@@ -1,0 +1,111 @@
+# Zensical Configuration for N-Vision-74 Project
+# Modern static site generator with Material Design theme and 3D component previews
+
+site_name = "N-Vision-74 Documentation"
+site_description = "A comprehensive guide to the N-Vision-74 1/10 scale vehicle project with 3D component previews."
+site_author = "N-Vision Team"
+
+repo_url = "https://github.com/CagriCatik/N-Vision-74"
+repo_name = "N-Vision-74"
+
+extra_javascript = [
+    { path = "javascripts/stl-viewer-module.js", type = "module" }
+]
+
+extra_css = [
+    "stylesheets/extra.css"
+]
+
+markdown_extensions = [
+    "pymdownx.highlight",
+    "pymdownx.inlinehilite",
+    "pymdownx.snippets",
+    "admonition",
+    "footnotes",
+    "pymdownx.details",
+    "pymdownx.superfences",
+    "pymdownx.mark",
+    "attr_list",
+    "md_in_html"
+]
+
+[theme]
+name = "material"
+logo = "assets/images/logo.webp"
+
+[theme.features]
+navigation_tabs = true
+navigation_sections = true
+navigation_expand = true
+navigation_top = true
+search_suggest = true
+search_highlight = true
+content_tabs_link = true
+content_code_copy = true
+
+[theme.palette]
+scheme = "slate"
+primary = "black"
+accent = "red"
+
+[theme.icon]
+logo = "lucide/car-front"
+repo = "fontawesome/brands/github"
+
+[[plugins]]
+name = "search"
+
+[[nav]]
+Home = "index.md"
+
+[[nav]]
+Blueprints = "01_Blueprints/README.md"
+
+[[nav]]
+"Reference Dimensions" = "02_Reference_Dimensions/scale_calculation_template.md"
+
+[[nav]]
+"SolidWorks Project" = "03_SolidWorks_Project/solidworks_file_plan.md"
+
+[[nav]]
+Documentation = [
+    { "01 - Project Goal and Scale" = "04_Documentation/01_project_goal_and_scale.md" },
+    { "02 - Blueprint Preparation and Import" = "04_Documentation/02_blueprint_preparation_and_import.md" },
+    { "03 - SolidWorks Master Layout" = "04_Documentation/03_solidworks_master_layout.md" },
+    { "04 - Body Surface Modelling Workflow" = "04_Documentation/04_body_surface_modeling_workflow.md" },
+    { "05 - Printable Body Shell and Splitting" = "04_Documentation/05_printable_body_shell_and_splitting.md" },
+    { "06 - Chassis, Wheels, and Mounting" = "04_Documentation/06_chassis_wheels_and_mounting.md" },
+    { "07 - Tolerances, Wall Thickness, and Fasteners" = "04_Documentation/07_tolerances_wall_thickness_and_fasteners.md" },
+    { "08 - Export, Slicing, and Iteration" = "04_Documentation/08_export_slicing_and_iteration.md" },
+    { "09 - Common Mistakes and Troubleshooting" = "04_Documentation/09_common_mistakes_and_troubleshooting.md" },
+    { "10 - Bambu Lab P1S, A1 mini Material Strategy" = "04_Documentation/10_bambu_lab_p1s_a1mini_material_strategy.md" }
+]
+
+[[nav]]
+Checklists = [
+    { "SolidWorks Modelling Checklist" = "05_Checklists/solidworks_modeling_checklist.md" },
+    { "Printer and Material Decision Checklist" = "05_Checklists/printer_material_decision_checklist.md" },
+    { "3D Printing Checklist" = "05_Checklists/3d_printing_checklist.md" }
+]
+
+[[nav]]
+Resources = [
+    { "Online Resources" = "06_Resources/online_resources.md" },
+    { "Search Notes" = "06_Resources/search_notes.md" }
+]
+
+[[nav]]
+"Print Iterations" = "08_Print_Iterations/iteration_log_template.md"
+
+[[nav]]
+"Printer and Material Profiles" = [
+    { "P1S PLA Profile Notes" = "09_Printer_and_Material_Profiles/p1s_pla_profile_notes.md" },
+    { "P1S ABS Profile Notes" = "09_Printer_and_Material_Profiles/p1s_abs_profile_notes.md" },
+    { "A1 mini PLA Profile Notes" = "09_Printer_and_Material_Profiles/a1mini_pla_profile_notes.md" },
+    { "Tolerance Coupon Results" = "09_Printer_and_Material_Profiles/tolerance_coupon_results.md" }
+]
+
+[[nav]]
+"3D Component Previews" = [
+    { "Body & Shell" = "previews/body_shell.md" }
+]
