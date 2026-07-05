@@ -1,0 +1,4 @@
+zensical>=0.0.46
+mkdocs-material>=9.6.7
+mkdocs-glightbox>=0.3.2
+pymdown-extensions>=10.14.3
